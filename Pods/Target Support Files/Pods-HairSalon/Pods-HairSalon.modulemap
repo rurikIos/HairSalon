@@ -1,0 +1,6 @@
+framework module Pods_HairSalon {
+  umbrella header "Pods-HairSalon-umbrella.h"
+
+  export *
+  module * { export * }
+}
