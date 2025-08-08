@@ -13,7 +13,10 @@
 		E209A54D2E44CD1600C4229E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E209A5452E44CD1600C4229E /* Main.storyboard */; };
 		E209A54E2E44CD1600C4229E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A5412E44CD1600C4229E /* AppDelegate.swift */; };
 		E209A54F2E44CD1600C4229E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A5462E44CD1600C4229E /* SceneDelegate.swift */; };
-		E209A5502E44CD1600C4229E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A5472E44CD1600C4229E /* ViewController.swift */; };
+		E209A5502E44CD1600C4229E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A5472E44CD1600C4229E /* RootViewController.swift */; };
+		E209A5AF2E46285B00C4229E /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A5AE2E46285B00C4229E /* Screen.swift */; };
+		E209A5B22E46297700C4229E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A5B12E46297700C4229E /* Router.swift */; };
+		E209A5B42E4629F600C4229E /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E209A5B32E4629F600C4229E /* RootPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +26,12 @@
 		E209A5412E44CD1600C4229E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E209A5422E44CD1600C4229E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E209A5462E44CD1600C4229E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E209A5472E44CD1600C4229E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E209A5472E44CD1600C4229E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E209A5482E44CD1600C4229E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E209A5492E44CD1600C4229E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E209A5AE2E46285B00C4229E /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		E209A5B12E46297700C4229E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E209A5B32E4629F600C4229E /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		E6D69970C7D558D2257FEF1C /* Pods-HairSalon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HairSalon.release.xcconfig"; path = "Target Support Files/Pods-HairSalon/Pods-HairSalon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,9 +119,28 @@
 		E209A57E2E44CDDC00C4229E /* code */ = {
 			isa = PBXGroup;
 			children = (
-				E209A5472E44CD1600C4229E /* ViewController.swift */,
+				E209A5B02E46291E00C4229E /* root */,
+				E209A5AD2E46284800C4229E /* base */,
+				E209A5B12E46297700C4229E /* Router.swift */,
 			);
 			path = code;
+			sourceTree = "<group>";
+		};
+		E209A5AD2E46284800C4229E /* base */ = {
+			isa = PBXGroup;
+			children = (
+				E209A5AE2E46285B00C4229E /* Screen.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		E209A5B02E46291E00C4229E /* root */ = {
+			isa = PBXGroup;
+			children = (
+				E209A5472E44CD1600C4229E /* RootViewController.swift */,
+				E209A5B32E4629F600C4229E /* RootPresenter.swift */,
+			);
+			path = root;
 			sourceTree = "<group>";
 		};
 		FC3F656DD0E08F926A61C302 /* Pods */ = {
@@ -250,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E209A5B42E4629F600C4229E /* RootPresenter.swift in Sources */,
 				E209A54E2E44CD1600C4229E /* AppDelegate.swift in Sources */,
 				E209A54F2E44CD1600C4229E /* SceneDelegate.swift in Sources */,
-				E209A5502E44CD1600C4229E /* ViewController.swift in Sources */,
+				E209A5B22E46297700C4229E /* Router.swift in Sources */,
+				E209A5502E44CD1600C4229E /* RootViewController.swift in Sources */,
+				E209A5AF2E46285B00C4229E /* Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
